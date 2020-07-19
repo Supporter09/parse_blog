@@ -1,0 +1,441 @@
+
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Theme Name :  
+	Version    :  
+	Author     :  
+	Author URI :  
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+	2. COMMONS FOR PAGE DESIGN
+	3. MENU
+		TOP MENU
+		SEARCH AREA
+		MIDDLE AREA
+		BOTTOM AREA
+		DROPDOWN MENU STYLING
+		DROPDOWN SUBMENU
+		DROPDOWN HOVER
+		NAV ICON
+	4. SINGLE POST
+		CIRCULAR PROGRESS BAR
+		VIDEO STYLING
+		RECOMEND AREA
+	5. SIDEBAR STYLING
+		ABOUT AUTHOR 
+		SEARCH AREA
+		NEWSLETTER AREA
+		CATEGORY AREA
+		LATEST POSTS
+		ADVERTISEMENT AREA
+		INSTAGRAM 
+		TAGS 
+	6. FOOTER INSTAGRAM STYLING 
+	7. FOOTER
+
+====================================================
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+html{ font-size: 100%; height: 100%;  overflow-x: hidden; touch-action: manipulation; }
+
+body{ font-size: 15px; font-family: 'Roboto', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
+	color: #000; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+
+h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+
+p{ line-height: 1.6; font-size: 1.05em; font-family: 'Maven Pro', sans-serif; font-weight: 400; color: #555; }
+
+h1{ font-size: 4em; line-height: 1; }
+h2{ font-size: 2.8em; line-height: 1.1; }
+h3{ font-size: 1.8em; }
+h4{ font-size: 1.5em; }
+h5{ font-size: 1.2em; }
+h6{ font-size: .9em; letter-spacing: 1px; }
+
+a, button{ display: inline-block; text-decoration: none; color: inherit; transition: all .3s; }
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ text-decoration: none; color: #FFAD4D; }
+
+b{ font-weight: 500; }
+
+img{ width: 100%; }
+
+li{ list-style: none; display: inline-block; }
+
+span{ display: inline-block; }
+
+button{ outline: 0; border: 0; background: none; cursor: pointer; }
+
+b.light-color{ color: #444; }
+
+
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+.btn{ font-size: .9em; padding: 15px 30px; border-radius: 1px; letter-spacing: 2px; 
+	border: 1px solid #FFAD4D; background: #FFAD4D; color: #fff; }
+
+.btn:hover{ color: #FFAD4D; background: none; }
+
+.btn-2{ background: none; box-shadow: 2px 10px 20px rgba(0,0,0,.2); color: #FFAD4D; }
+
+.btn-2:hover{ background: #FFAD4D; color: #fff; }
+
+
+.section{ padding: 70px 0 40px; }
+
+.section .heading{ padding-bottom: 70px; }
+
+.center-text{ text-align: center; } 
+
+.color-white{ color: #fff; }
+
+.display-table{ display: table; height: 100%; width: 100%; }
+
+.display-table-cell{ display: table-cell; vertical-align: middle; }
+
+.card{ background: transparent; border: 0; }
+
+.no-side-padding{ padding-right: 0px; padding-left: 0px; }
+
+.no-left-padding{ padding-left: 0px; }
+
+.no-right-padding{ padding-right: 0px; }
+
+.icon{ font-size: 2em; }
+
+
+.left-area{ float: left;  }
+
+.right-area{ float: right;  }
+
+.width-60{ width:60%; }
+
+.width-50{ width: 50%; }
+
+
+::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+::-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+:-ms-input-placeholder { font-size: .9em; letter-spacing: 1px;  }
+
+:-moz-placeholder { font-size: .9em; letter-spacing: 1px;  }
+
+input:focus,
+textarea:focus{ border-color: #FFAD4D!important; }
+
+
+
+/* ---------------------------------
+3. MENU
+--------------------------------- */
+
+header{ position: absolute; left: 0; right: 0; top: 0; z-index: 1000; font-size: .95em; 
+	box-shadow: 0px 2px 10px rgba(0,0,0, .3); background: #fff; }
+
+
+/* TOP MENU */
+
+header .top-menu{ width: 100%; height: 45px; line-height: 45px; overflow: hidden; font-size: .95em; font-style: italic; }
+
+
+header .top-menu ul.welcome-area{ padding-left: 20px; }
+
+header .top-menu ul.welcome-area > li{ margin: 0 15px; padding: 0 15px; border-left: 1px solid #ddd; }
+
+
+header .top-menu ul > li:first-child{ border-left: 0; }
+
+header .top-menu ul.social-icons{ display: inline-block; padding: 0 35px; color: #aaa; }
+
+header .top-menu ul.social-icons > li > a{ padding: 0 15px; }
+
+
+
+/* SEARCH AREA */
+
+header .src-area{ position: relative; float: left; height: 45px; width: 250px; display: inline-block; 
+	border-left: 1px solid #ddd; border-right: 1px solid #ddd; background: #fff; }
+
+header .src-area .src-input{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%;
+	padding: 0 40px 0 20px; background: transparent; border: 0; outline: 0; }
+
+header .src-area .src-input:focus{ box-shadow: 0px 0px 1px #aaa; }
+
+header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; right: 0; width: 40px; font-size: 1.2em; 
+	opacity: .6; z-index: 10; }
+
+	
+	
+/* MIDDLE AREA */
+
+header .middle-menu{ border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;  }
+
+header .logo{ padding: 30px 0; height: 160px; }
+
+header .logo img{ height: 100%; width: auto; }
+
+
+/* BOTTOM AREA */
+
+header .bottom-area{ text-align: center; }
+
+header .main-menu{ font-weight: 500; }
+
+header .main-menu > li > a{ height: 60px; line-height: 60px; padding: 0 25px; }
+
+header .main-menu > li > a:hover{ background: #eee; }
+
+
+header .visible.main-menu{ display: block; }
+
+
+
+/* DROPDOWN MENU STYLING */
+
+header .main-menu li.drop-down{ position: relative; text-align: left; }
+
+header .main-menu li.drop-down > ul.drop-down-menu{ display: none; position: absolute; top: 60px; left: 0; 
+	min-width: 200px; box-shadow: 0px 3px 10px rgba(0,0,0,.3); background: #fff; }
+
+header .main-menu li.drop-down > ul.drop-down-menu li{ display: block; border-top: 1px solid #ddd; }
+
+header .main-menu li.drop-down > ul.drop-down-menu li > a{ display: block; padding: 12.5px 20px; }
+
+header .main-menu li.drop-down > ul.drop-down-inner li:first-child{ border-top: 0; }
+
+header .main-menu li i{margin-left: 10px; }
+
+
+
+/* DROPDOWN SUBMENU */
+
+header .main-menu li.drop-down > ul.drop-down-inner{ top: 0; left: auto; left: 100%; }
+
+
+
+/* DROPDOWN HOVER */
+
+header .main-menu li a.mouseover{ background: #F2F3F4; }
+
+header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block; 
+	animation: full-opacity-anim .2s forwards; }
+
+
+@keyframes full-opacity-anim{
+	0%{ opacity: 0; }
+	100%{ opacity: 1; }
+}
+
+/* NAV ICON */
+
+.menu-nav-icon{ display: none; height: 60px; width: 50px; text-align: center; line-height: 60px; cursor: pointer; 
+	font-size: 1.8em; }
+	
+ 
+ 
+/* ---------------------------------
+4. SINGLE POST
+--------------------------------- */
+
+.blog-area{ padding: 370px 0 50px; }
+
+.blog-posts .single-post{ margin-bottom: 60px; }
+
+.single-post .icons{ overflow: hidden; line-height: 30px; margin: 30px 0 10px; }
+
+.single-post .icons .caegory-btn{ padding: 0 20px; height: 30px; line-height: 30px; }
+
+.single-post .icons ul.social-icons{ color: #666; }
+
+.single-post .icons ul.social-icons > li > a{ padding-left: 15px; }
+
+.single-post .icons ul.social-icons > li > a > i{ margin-right: 10px; }
+
+.single-post .title{ margin: 20px 0 15px; }
+
+.single-post .date{ color: #999; }
+
+.single-post .desc{ margin: 30px 0; }
+	
+.single-post .quoto{ padding: 30px 40px; position: relative; }
+
+.single-post .quoto i{ margin-right: 10px; position: absolute; top: 10px; left: 10px; font-size: 1.4em; color: #FFAD4D; }
+
+.single-post .image-wrapper{ margin-bottom: 15px; }
+
+
+/* CIRCULAR PROGRESS BAR */
+
+.circular-pregress{ padding: 0px 0 20px; }
+
+.circular-pregress .pre-writing{ color: #aaa; }
+
+
+/* VIDEO STYLING */
+
+.single-post .embed-video{ background-image: url(../../images/blog-11-1000x600.jpg)!important; }
+
+.single-post .embed-video a{ margin: -35px 0 0 -35px; height: 70px!important; width: 70px!important; }
+
+.single-post .embed-video a:hover{ transform: scale(1.2); }
+
+
+/* RECOMEND AREA */
+
+.recomend-area{ overflow: hidden; margin: 30px 0; }
+
+.recomend-area > .title{ margin-bottom: 30px; }
+
+.recomend-area .recomend{ overflow: hidden; margin-bottom: 30px; }
+
+
+.recomend .post-image{ width: 150px; float: left; }
+
+.recomend .category-btn{ padding: 7px 15px; margin-bottom: 5px; }
+
+.recomend .post-info{ margin-left: 170px; }
+
+.recomend .post-info .date{ margin: 0px 0 15px; color: #777; }
+
+
+/* ---------------------------------
+5. SIDEBAR STYLING
+--------------------------------- */
+
+.sidebar-section{ margin-bottom: 50px; }
+
+.sidebar-section .title{ margin-bottom: 30px; }
+
+.sidebar-area img{ max-width: 600px; }
+
+
+/* ABOUT AUTHOR */
+
+.about-author{ margin-top: 30px; padding: 0 30px 30px; box-shadow: 0px 10px 40px rgba(0,0,0,.2); }
+
+.about-author .author-image{ max-width: 150px; margin: 0px auto 20px; transform: translateY(-30px); 
+	border-radius: 3px; overflow: hidden; box-shadow: 0px 0px 30px rgba(0,0,0,.1); }
+
+.about-author .social-icons > li{ margin: 0 10px; color: #888; font-size: 1.05em; }
+
+.about-author .author-name{ margin: 20px 0; }
+
+.about-author .signature-image{ margin: 20px auto 0; max-width: 120px; }
+
+.about-author .read-more-link{ margin: 20px 0; font-size: .9em; letter-spacing: 2px; position: relative; 
+	overflow: hidden; color: #FFAD4D; }
+
+.about-author .read-more-link:after{ content:''; position: absolute; bottom: 0px; left: 0; right: 0; 
+	height: 1px; transition: all .2s; background: #FFAD4D; }
+
+.about-author .read-more-link:hover:after{ transform: translateX(100%); }
+
+
+/* SEARCH AREA */
+
+.src-area{ line-height: 50px; position: relative;  }
+
+.src-area input{ display: block; width: 100%; padding: 0 50px 0 20px; border: 0; outline: 0; 
+	border-bottom: 1px solid #bbb;  }
+
+.src-area .src-btn{ position: absolute; top: 0; right: 20px; height: 50px; }
+
+	
+/* NEWSLETTER AREA */
+
+.newsletter-area{ padding: 30px; background :#29333C; }
+
+.newsletter-area .title{ margin: 0; color: #fff; }
+
+.newsletter-area .email-input{ width: 100%; margin: 15px 0; border: 0; padding: 10px 20px; background: #fff; }
+
+
+/* CATEGORY AREA */
+
+.category-area .category{ position: relative; margin-bottom: 20px; }
+
+.category .name{ position: absolute; bottom: 0; left: 0; right: 0; padding: 7px 20px; background: #FFAD4D; color: #fff; }
+
+
+/* LATEST POSTS */
+
+.latest-post{ overflow: hidden; margin-bottom: 20px; }
+
+.latest-post .l-post-image{ width: 80px; float: left; }
+
+.latest-post .post-info{ margin-left: 100px; }
+
+.latest-post .category-btn{ padding: 5px 10px; margin-bottom: 5px; }
+
+.latest-post .date{ margin-top: 5px; color: #888; }
+	
+
+/* ADVERTISEMENT AREA */
+
+.advertisement-img{ position: relative; }
+
+.advertisement-img .discover-btn{ position: absolute; bottom: 30px; padding: 15px 0; width: 200px; 
+	left: 50%; margin-left: -100px; border-color: #fff; color: #fff; }
+
+.advertisement-img .discover-btn:hover{ border-color: #FFAD4D; }
+
+
+/* INSTAGRAM */
+	
+.instagram-area{ overflow: hidden; }
+
+.instagram-area .instagram-img > li{ width: 30%; float: left; margin: 0 5px 5px 0; }
+
+	
+/* TAGS */
+
+.tags-area .tags{ overflow: hidden; }
+
+.tags-area .tags > li{ float: left; margin: 0 5px 5px 0; }
+
+.tags-area .tags > li > a{ padding: 10px 15px; }
+
+
+/* ---------------------------------
+6. FOOTER INSTAGRAM STYLING 
+--------------------------------- */
+
+.footer-instagram-area{ overflow: hidden; border-top: 1px solid #ccc; }
+
+.footer-instagram-area .title{ padding: 20px 0; }
+
+.footer-instagram-area ul.instagram > li{ float: left; width: 14.285%; }
+
+
+/* ---------------------------------
+7. FOOTER
+--------------------------------- */
+
+footer{ background: #29333C; color: #ddd;  }
+
+footer .footer-section{ margin: 30px 0; }
+
+footer .copyright{ color: #ddd;  }
+
+footer .social-icons{ text-align: right; }
+
+footer .social-icons > li > a{ padding-left: 15px; }

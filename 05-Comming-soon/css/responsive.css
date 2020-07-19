@@ -1,0 +1,131 @@
+
+
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+	
+	
+}
+
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+	
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+	h1{ font-size: 4em; }
+	h2{ font-size: 3em; }
+	h3{ font-size: 2em; }
+	
+	
+}
+
+
+/* Screens Resolution : 767px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+	
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+	p{ line-height: 1.4; }
+
+	h1{ font-size: 3em; }
+	h2{ font-size: 2.5em; }
+	h3{ font-size: 1.8em; }
+	h4{ font-size: 1.5em; }
+	h5{ font-size: 1.2em; }
+	
+	/* ---------------------------------
+	2. COMMONS FOR PAGE DESIGN
+	--------------------------------- */
+
+	.section{ padding: 40px 0 10px; }
+
+	
+	/* ---------------------------------
+	3. MENU
+	--------------------------------- */
+	
+	header .logo{ margin-top: 20px; padding: 10px 0; height: 100px; }
+	
+	
+	/* ---------------------------------
+	4. REMAINING TIME
+	--------------------------------- */
+
+	.remaining-time{ padding: 50px 0 20px; }
+
+	
+	/* ---------------------------------
+	5. ABOUT AUTHOR
+	--------------------------------- */
+
+	.about-author{ margin: 100px 0 50px; }
+
+
+	/* ---------------------------------
+	6. FOOTER INSTAGRAM STYLING 
+	--------------------------------- */
+
+	.footer-instagram-area ul.instagram > li{ width: 25%; }
+
+	
+	/* ---------------------------------
+	7. FOOTER
+	--------------------------------- */
+	
+	footer{ padding-top: 20px; }
+	
+	footer .footer-section{ margin: 0px 0 20px; }
+
+	footer .social-icons{ text-align: left; }
+
+	footer .social-icons > li > a{ padding: 0 15px 0 0; }
+	
+	
+	
+	
+
+	
+}
+
+/* Screens Resolution : 479px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+	
+	body{ font-size: 13px; }
+
+	h1{ font-size: 2em; }
+	h2{ font-size: 1.8em; }
+	h3{ font-size: 1.5em; }
+	h4{ font-size: 1.3em; }
+	h5{ font-size: 1.1em; }
+	
+	
+}
+
+/* Screens Resolution : 359px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 359px) {
+	
+	
+}
+
+/* Screens Resolution : 290px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 290px) {
+	
+	
+}

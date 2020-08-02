@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Making Social Comments Realtime & Fun with Pusher using Javascript like the Flash</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./assets/pusher-logo.png" />
+            </div>
+        </header>
+        <section>
+            <img class="flash-logo" src="./assets/flash-logo.jpg" />
+            <h2>Flash Comments - Super Fast</h2>
+            <div class="post">
+      <!-- Put here Content like Youtube Video, Blog Post or Live Stream -->
+            </div>
+        </section>
+        <section>
+
+           <div class="flash-comments">
+                <div class="header">
+                    <div><img src="./assets/comments.png"></div>
+                    <div class="text">Comments</div>
+                </div>
+                <form class="pure-form" id="comment-form">
+                    <!-- Here we will put a form to create new comment -->
+                    <div class="comment-form">
+                        <div class="left-side">
+                            <div class="row">
+                                <input type="text" required placeholder="enter your name" id="new_comment_name">
+                                <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                            </div>
+                            <div class="row">
+                                <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                                <button type="submit" class="button-secondary pure-button">Send Comment</button>
+                        </div>
+                    </div>
+                </form>
+                 <div class="comments-list" id="comments-list">
+                    <!-- Here we will display live comments -->
+                    <script id="comment-template" type="text/x-template">
+                        <div class="user-icon">
+                            <img src="./assets/user.png" />
+                        </div>
+                        <div class="comment-info">
+                            <div class="row">
+                                  <div class="name">{{name}}</div>
+                                  <div class="email">{{email}}</div>
+                             </div>
+                             <div class="row">
+                                   <div class="text">{{comment}}</div>
+                             </div>
+                         </div>
+                     </script>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+    </body>
+</html>

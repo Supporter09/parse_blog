@@ -2,18 +2,15 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var Pusher = require('pusher');
-var app = express();
-
-
 
 var pusher = new Pusher({
-    app_id = "1048586",
-    key = "1c9cb1b2261aaaa83806",
-    secret = "8efed3f362759dead511",
-    cluster = "ap1",
+    app_id: "1048586",
+    key : "1c9cb1b2261aaaa83806",
+    secret: "8efed3f362759dead511",
+    cluster: "ap1",
     encrypted: true,
 });
-
+var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));

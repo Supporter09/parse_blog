@@ -33,51 +33,16 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form method="POST">
+                    <form method="POST" id="sign_up_form">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Name" name="name">
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-2 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">Gender</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <input class="input--style-2" type="text" placeholder="Email" name="email" id="sign_up_email" >
                         </div>
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">Class</option>
-                                    <option>Class 1</option>
-                                    <option>Class 2</option>
-                                    <option>Class 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                            <input class="input--style-2" type="text" placeholder="Password" name="password" id="sign_up_password">
                         </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-2" type="text" placeholder="Registration Code" name="res_code">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="p-t-30">
-                            <button class="btn btn--radius btn--green" type="submit">Sign Up</button>
+                            <button class="btn btn--radius btn--green" type="submit" id="sign_up_btn">Sign Up</button>
                             <button class="btn btn--radius btn--green" type="submit"><a href="01-homepage.html">BACK HOME </a></button>
                         </div>
                     </form>
@@ -95,6 +60,16 @@
 
     <!-- Main JS-->
     <script src="./sign_up/js/global.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+
+
     <script src="index.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 

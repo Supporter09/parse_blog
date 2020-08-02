@@ -85,8 +85,8 @@
 			<li><a href="#">ABOUT</a></li>
 			<li><a href="#">CATEGORIES</a></li>
 			<li><a href="#">CONTACT</a></li>
-			<li><a href="sign_up.html">SIGN UP</a></li>
 			<li><a href="login.html">SIGN IN</a></li>
+			<li><a onclick="mainApp.logOut()">logOut</a></li>
 		</ul><!-- main-menu -->
 
 	</div><!-- conatiner -->
@@ -510,6 +510,12 @@
 
 
 	<!-- SCIPTS -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+	
+
+	<script src="firebase.js"></script>
 	<script src="index.js"></script>
 	<script src="common-js/jquery-3.1.1.min.js"></script>
 
@@ -520,6 +526,8 @@
 	<script src="common-js/layerslider.js"></script>
 
 	<script src="common-js/scripts.js"></script>
+
+	
 
 </body>
 </html>
